@@ -1,0 +1,171 @@
+/* general styling */
+
+.title {
+    font-size: 50px;
+    color: goldenrod;
+}
+
+.title-center {
+    font-size: 50px;
+    color: goldenrod;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Segoe UI';
+}
+
+.table {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+    color: grey;
+  }
+
+#border {
+    border: solid;
+    padding: 5px;
+}
+
+/* with boundary lines */
+.floating-box {
+    float: center;
+    width: 100%;
+    /* padding: 30px;
+    margin: 10px; */
+    border: 3px solid darkgray;  
+  }
+
+  /* without boundry lines */
+.floating{
+    float: center;
+    width: 90%;
+    padding: 30px;
+    margin: 10px;
+}
+
+.button {
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px darkgray;
+}
+
+.button:hover {
+    background-color: goldenrod;
+  }
+
+.hrShort {
+    width: 80%;
+    background-color: goldenrod;
+}
+
+.hrLong {
+    width: 95%;
+    background-color: goldenrod;
+    height: 2px;
+}
+
+/* Carousel */
+
+.carousell {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .left, .right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    font-size: 50px;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  .right {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  .left:hover, .right:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* navbar */
+
+  .shadow {
+      box-shadow: 0 2px 2px darkgray;;
+  }
+
+  nav {
+      background-color: #f8f9fa;
+  }
+
+  .nav-clicks {
+        text-decoration: none;
+        color: gray;
+        padding-right: 20px;
+        font-size: large;
+        padding-left: 5px;
+  }
+
+  .nav-clicks:hover {
+        text-decoration: none;
+  }
+  
+
+  /* footer */
+
+  footer {
+      background-color: #f8f9fa;
+  }
+
+
+/* blinking text golf */
+  .blinking{
+    animation:blinkingText 1.4s infinite;
+}
+@keyframes blinkingText{
+    0%{color: black;}
+    50%{color: transparent;}
+    100%{color: goldenrod;}
+}
+
+/* snow page style */
+/* ------------------------------------------ */
+
+/* blinking text for snowboard */
+.blinking_snow{
+  animation:blinkingText_snow 1.4s infinite;
+}
+@keyframes blinkingText_snow{
+  0%{color: black;}
+  50%{color: lightblue;}
+  100%{color: blue;}
+}
+
+.title_snow {
+  font-size: 50px;
+  color: rgb(105, 189, 241);
+}
+
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.big_blue_text {
+  font-size: 20px;
+  color: blue;
+}
