@@ -7,4 +7,4 @@
  Visit Version 2.0 of the website that adds storing student signups in the backend on MongoDB and sending text message notifications to the instructor using the Twilio API: [narkman-golf-website.herokuapp.com/signup](https://narkman-golf-website.herokuapp.com/signup)
  
 ![Signup](pics/signup.png)
-![Twilio](pics/twilio.jpg)
+![Twilio](pics/Twilio.png)
