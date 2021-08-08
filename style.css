@@ -189,6 +189,14 @@ td {
   height: 33vh;
 }
 
+.footer {
+  padding: 12px 0px;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
 .footer-nav {
   display: flex;
   justify-content: center;
@@ -196,4 +204,11 @@ td {
 
 .footer-nav__icon {
   margin: 8px;
+}
+
+/* Prevents content from being buried by navbar */
+@media (max-width: 992px) {
+  body {
+    margin-top: 128px;
+  }
 }
