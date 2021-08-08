@@ -13,6 +13,7 @@
 }
 
 body {
+  overflow-x: hidden;
     font-family: 'Segoe UI';
 }
 
@@ -129,12 +130,15 @@ body {
 
 /* blinking text golf */
   .blinking{
-    animation:blinkingText 1.4s infinite;
+    animation: blinkingText 2.8s infinite;
 }
+
 @keyframes blinkingText{
     0%{color: black;}
-    50%{color: transparent;}
-    100%{color: goldenrod;}
+    25%{color: transparent;}
+    50%{color: goldenrod;}
+    75%{color: transparent;}
+    100%{color: black;}
 }
 
 /* snow page style */
@@ -168,4 +172,43 @@ body {
 .big_blue_text {
   font-size: 20px;
   color: blue;
+}
+
+/* Added by Raj */
+/* Utilizes BEM for CSS naming */
+td {
+  padding: 0;
+}
+
+.class-table {
+  border-collapse: collapse;
+}
+
+.class-table__image {
+  width: 33vw;
+  height: 33vh;
+}
+
+.footer {
+  padding: 12px 0px;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav__icon {
+  margin: 8px;
+}
+
+/* Prevents content from being buried by navbar */
+@media (max-width: 992px) {
+  body {
+    margin-top: 128px;
+  }
 }
